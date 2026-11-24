@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cbbc6f984b6ecef03fd21bca3a63f639 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cbbc6f984b6ecef03fd21bca3a63f639" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cbbc6f984b6ecef03fd21bca3a63f639 = L.map(
+                "map_cbbc6f984b6ecef03fd21bca3a63f639",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d3f421602798cbb7507b0fb2d5dceb5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+            var circle_marker_9c5be8cb3ab7c22a82d566e222a191e8 = L.circleMarker(
+                [40.42025, -3.70117],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_059457b872aeb2c87d6770f54dda70d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2caea7898addd7d0ed354566310d1e2b = $(`<div id="html_2caea7898addd7d0ed354566310d1e2b" style="width: 100.0%; height: 100.0%;">Barrio: Justicia<br>Rentabilidad: 26.30<br>Ocupación: 252</div>`)[0];
+                popup_059457b872aeb2c87d6770f54dda70d2.setContent(html_2caea7898addd7d0ed354566310d1e2b);
+            
+        
+
+        circle_marker_9c5be8cb3ab7c22a82d566e222a191e8.bindPopup(popup_059457b872aeb2c87d6770f54dda70d2)
+        ;
+
+        
+    
+    
+            var circle_marker_f794fbb5a7edf75be8fd70b15907d344 = L.circleMarker(
+                [40.41403, -3.72908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_91fd4d1ac5d818266d17effcb6400d57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7daf7b54e43607f1575444347c58c5f = $(`<div id="html_a7daf7b54e43607f1575444347c58c5f" style="width: 100.0%; height: 100.0%;">Barrio: Puerta del Angel<br>Rentabilidad: 20.44<br>Ocupación: 255</div>`)[0];
+                popup_91fd4d1ac5d818266d17effcb6400d57.setContent(html_a7daf7b54e43607f1575444347c58c5f);
+            
+        
+
+        circle_marker_f794fbb5a7edf75be8fd70b15907d344.bindPopup(popup_91fd4d1ac5d818266d17effcb6400d57)
+        ;
+
+        
+    
+    
+            var circle_marker_ae70a54c8b8353720a9a7d2899fe5018 = L.circleMarker(
+                [40.42586, -3.71027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_8411a7b83af262534094acca5adf102e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_121f2896f86233cb7741d029a91aecea = $(`<div id="html_121f2896f86233cb7741d029a91aecea" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 20.08<br>Ocupación: 255</div>`)[0];
+                popup_8411a7b83af262534094acca5adf102e.setContent(html_121f2896f86233cb7741d029a91aecea);
+            
+        
+
+        circle_marker_ae70a54c8b8353720a9a7d2899fe5018.bindPopup(popup_8411a7b83af262534094acca5adf102e)
+        ;
+
+        
+    
+    
+            var circle_marker_ae035dd362a7b511599af53fb0984c49 = L.circleMarker(
+                [40.41313, -3.72843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_b393f84c7286209e478f0cf0f2a8dcb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c22ef4faabb8c68392b139bea4d638 = $(`<div id="html_e4c22ef4faabb8c68392b139bea4d638" style="width: 100.0%; height: 100.0%;">Barrio: Puerta del Angel<br>Rentabilidad: 20.60<br>Ocupación: 220</div>`)[0];
+                popup_b393f84c7286209e478f0cf0f2a8dcb7.setContent(html_e4c22ef4faabb8c68392b139bea4d638);
+            
+        
+
+        circle_marker_ae035dd362a7b511599af53fb0984c49.bindPopup(popup_b393f84c7286209e478f0cf0f2a8dcb7)
+        ;
+
+        
+    
+    
+            var circle_marker_80b610505a231597df1c04bc42a8795d = L.circleMarker(
+                [40.40579, -3.6956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_3e14a99f2b53465f7bf58cfb390755e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3ede4b40fb6c28c129730a662b5e39b = $(`<div id="html_a3ede4b40fb6c28c129730a662b5e39b" style="width: 100.0%; height: 100.0%;">Barrio: Palos de Moguer<br>Rentabilidad: 24.70<br>Ocupación: 255</div>`)[0];
+                popup_3e14a99f2b53465f7bf58cfb390755e4.setContent(html_a3ede4b40fb6c28c129730a662b5e39b);
+            
+        
+
+        circle_marker_80b610505a231597df1c04bc42a8795d.bindPopup(popup_3e14a99f2b53465f7bf58cfb390755e4)
+        ;
+
+        
+    
+    
+            var circle_marker_45c824843772da09cf2ebda245cf5a5d = L.circleMarker(
+                [40.36728, -3.69621],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_60566107472a5a82e8c0870901f31fba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2983e3847e1a063cff7c4f5c3adfe76 = $(`<div id="html_a2983e3847e1a063cff7c4f5c3adfe76" style="width: 100.0%; height: 100.0%;">Barrio: Orcasur<br>Rentabilidad: 20.05<br>Ocupación: 255</div>`)[0];
+                popup_60566107472a5a82e8c0870901f31fba.setContent(html_a2983e3847e1a063cff7c4f5c3adfe76);
+            
+        
+
+        circle_marker_45c824843772da09cf2ebda245cf5a5d.bindPopup(popup_60566107472a5a82e8c0870901f31fba)
+        ;
+
+        
+    
+    
+            var circle_marker_5bdaf4677dc0c6149a02e4a2328e278a = L.circleMarker(
+                [40.41123, -3.69515],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_3d60c56e909bd93d210f16184aa3ade3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e836fa9d16da08cb45c567f50312bc4 = $(`<div id="html_8e836fa9d16da08cb45c567f50312bc4" style="width: 100.0%; height: 100.0%;">Barrio: Cortes<br>Rentabilidad: 22.67<br>Ocupación: 255</div>`)[0];
+                popup_3d60c56e909bd93d210f16184aa3ade3.setContent(html_8e836fa9d16da08cb45c567f50312bc4);
+            
+        
+
+        circle_marker_5bdaf4677dc0c6149a02e4a2328e278a.bindPopup(popup_3d60c56e909bd93d210f16184aa3ade3)
+        ;
+
+        
+    
+    
+            var circle_marker_813e20ea93db68d7fc7980be46dfb9c2 = L.circleMarker(
+                [40.4144287109375, -3.7077600955963135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_0476718d4d4b91bbb42775665c4cdddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8aedcba81257d698f64a54d91f570bad = $(`<div id="html_8aedcba81257d698f64a54d91f570bad" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 33.26<br>Ocupación: 255</div>`)[0];
+                popup_0476718d4d4b91bbb42775665c4cdddc.setContent(html_8aedcba81257d698f64a54d91f570bad);
+            
+        
+
+        circle_marker_813e20ea93db68d7fc7980be46dfb9c2.bindPopup(popup_0476718d4d4b91bbb42775665c4cdddc)
+        ;
+
+        
+    
+    
+            var circle_marker_d98102e7e568f4fb7d0c27bdcc81441e = L.circleMarker(
+                [40.4272503, -3.7025434],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_e3dd9670589eb0d7d92d46073e14cc2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c74cdd8e2a8122c2b82da522a4a8840 = $(`<div id="html_3c74cdd8e2a8122c2b82da522a4a8840" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 21.62<br>Ocupación: 255</div>`)[0];
+                popup_e3dd9670589eb0d7d92d46073e14cc2c.setContent(html_3c74cdd8e2a8122c2b82da522a4a8840);
+            
+        
+
+        circle_marker_d98102e7e568f4fb7d0c27bdcc81441e.bindPopup(popup_e3dd9670589eb0d7d92d46073e14cc2c)
+        ;
+
+        
+    
+    
+            var circle_marker_2fd1a7e7bad65d2da2bbec33b6c8415d = L.circleMarker(
+                [40.42172, -3.68958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_8ce1e823c8cc3cc1248b226f4a01316d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c2128e7912337b9aa03fe44b5484a91 = $(`<div id="html_2c2128e7912337b9aa03fe44b5484a91" style="width: 100.0%; height: 100.0%;">Barrio: Recoletos<br>Rentabilidad: 23.62<br>Ocupación: 255</div>`)[0];
+                popup_8ce1e823c8cc3cc1248b226f4a01316d.setContent(html_2c2128e7912337b9aa03fe44b5484a91);
+            
+        
+
+        circle_marker_2fd1a7e7bad65d2da2bbec33b6c8415d.bindPopup(popup_8ce1e823c8cc3cc1248b226f4a01316d)
+        ;
+
+        
+    
+    
+            var circle_marker_ab4a3c9ff728a135b5da6c405917a523 = L.circleMarker(
+                [40.41746, -3.70931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_cc27f499af297054e64517a342553d67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3880e28fceda5b6cf3d49af239d8eba = $(`<div id="html_d3880e28fceda5b6cf3d49af239d8eba" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 24.93<br>Ocupación: 255</div>`)[0];
+                popup_cc27f499af297054e64517a342553d67.setContent(html_d3880e28fceda5b6cf3d49af239d8eba);
+            
+        
+
+        circle_marker_ab4a3c9ff728a135b5da6c405917a523.bindPopup(popup_cc27f499af297054e64517a342553d67)
+        ;
+
+        
+    
+    
+            var circle_marker_8fae4b6c8c14bdd39c6072c2569e6c9c = L.circleMarker(
+                [40.41704, -3.70917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_b952a31323015eed0ef860649b2fa221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba402384a0cedafea1759c23324d4c06 = $(`<div id="html_ba402384a0cedafea1759c23324d4c06" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 24.75<br>Ocupación: 255</div>`)[0];
+                popup_b952a31323015eed0ef860649b2fa221.setContent(html_ba402384a0cedafea1759c23324d4c06);
+            
+        
+
+        circle_marker_8fae4b6c8c14bdd39c6072c2569e6c9c.bindPopup(popup_b952a31323015eed0ef860649b2fa221)
+        ;
+
+        
+    
+    
+            var circle_marker_a36630c542aa2ebca381488923efdf7e = L.circleMarker(
+                [40.4228, -3.71035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_772756f24398698baadb0c475ef239ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e437632d7d0b998d8ebd53537d0c845 = $(`<div id="html_3e437632d7d0b998d8ebd53537d0c845" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 22.77<br>Ocupación: 255</div>`)[0];
+                popup_772756f24398698baadb0c475ef239ef.setContent(html_3e437632d7d0b998d8ebd53537d0c845);
+            
+        
+
+        circle_marker_a36630c542aa2ebca381488923efdf7e.bindPopup(popup_772756f24398698baadb0c475ef239ef)
+        ;
+
+        
+    
+    
+            var circle_marker_74173cf6d4f1fe857c384db3d0e3628c = L.circleMarker(
+                [40.42414, -3.7122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_7a7d59cd31eef1494e3072d2d0046efc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04eab5b3b6e04af24f61cb9beab8c7be = $(`<div id="html_04eab5b3b6e04af24f61cb9beab8c7be" style="width: 100.0%; height: 100.0%;">Barrio: Argüelles<br>Rentabilidad: 30.18<br>Ocupación: 252</div>`)[0];
+                popup_7a7d59cd31eef1494e3072d2d0046efc.setContent(html_04eab5b3b6e04af24f61cb9beab8c7be);
+            
+        
+
+        circle_marker_74173cf6d4f1fe857c384db3d0e3628c.bindPopup(popup_7a7d59cd31eef1494e3072d2d0046efc)
+        ;
+
+        
+    
+    
+            var circle_marker_51ac894ab8076f7b3a9e7e69411a5330 = L.circleMarker(
+                [40.41465, -3.70869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_aba4dd7d500bd40064fed12f11ee3f76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aea04981ec317bf08005b961355a690e = $(`<div id="html_aea04981ec317bf08005b961355a690e" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 26.99<br>Ocupación: 255</div>`)[0];
+                popup_aba4dd7d500bd40064fed12f11ee3f76.setContent(html_aea04981ec317bf08005b961355a690e);
+            
+        
+
+        circle_marker_51ac894ab8076f7b3a9e7e69411a5330.bindPopup(popup_aba4dd7d500bd40064fed12f11ee3f76)
+        ;
+
+        
+    
+    
+            var circle_marker_9a74f9c02ab70f552f5df89b0d3c5d49 = L.circleMarker(
+                [40.40969, -3.71225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_25faa375f7a9a1cc1d92adb381423d3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e6ae47b1b9ac8d9a66732b786059f1e = $(`<div id="html_8e6ae47b1b9ac8d9a66732b786059f1e" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 22.16<br>Ocupación: 246</div>`)[0];
+                popup_25faa375f7a9a1cc1d92adb381423d3f.setContent(html_8e6ae47b1b9ac8d9a66732b786059f1e);
+            
+        
+
+        circle_marker_9a74f9c02ab70f552f5df89b0d3c5d49.bindPopup(popup_25faa375f7a9a1cc1d92adb381423d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_2f8e0180cb994eb62b06448e8674044c = L.circleMarker(
+                [40.39286804199219, -3.658323049545288],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_e46733d9f842d5223b3d6e12e4c44412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf02ae9d75d3d8413bb397f87ec6273d = $(`<div id="html_cf02ae9d75d3d8413bb397f87ec6273d" style="width: 100.0%; height: 100.0%;">Barrio: Numancia<br>Rentabilidad: 20.62<br>Ocupación: 255</div>`)[0];
+                popup_e46733d9f842d5223b3d6e12e4c44412.setContent(html_cf02ae9d75d3d8413bb397f87ec6273d);
+            
+        
+
+        circle_marker_2f8e0180cb994eb62b06448e8674044c.bindPopup(popup_e46733d9f842d5223b3d6e12e4c44412)
+        ;
+
+        
+    
+    
+            var circle_marker_d59ba5971893740c4da1e7fe7807703d = L.circleMarker(
+                [40.42077, -3.70277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_980d040195de4e5508e560f259f79b30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d550de8faf33341fcce1241787ccfa62 = $(`<div id="html_d550de8faf33341fcce1241787ccfa62" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 22.51<br>Ocupación: 255</div>`)[0];
+                popup_980d040195de4e5508e560f259f79b30.setContent(html_d550de8faf33341fcce1241787ccfa62);
+            
+        
+
+        circle_marker_d59ba5971893740c4da1e7fe7807703d.bindPopup(popup_980d040195de4e5508e560f259f79b30)
+        ;
+
+        
+    
+    
+            var circle_marker_c7dfd7e1faade45718f3debf6f8ee668 = L.circleMarker(
+                [40.41766, -3.70974],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_55507ecc7713c850e8c3a8313265ab00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3c5f3a7d70a39f6ac85fc9ccd818f45 = $(`<div id="html_e3c5f3a7d70a39f6ac85fc9ccd818f45" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 30.10<br>Ocupación: 255</div>`)[0];
+                popup_55507ecc7713c850e8c3a8313265ab00.setContent(html_e3c5f3a7d70a39f6ac85fc9ccd818f45);
+            
+        
+
+        circle_marker_c7dfd7e1faade45718f3debf6f8ee668.bindPopup(popup_55507ecc7713c850e8c3a8313265ab00)
+        ;
+
+        
+    
+    
+            var circle_marker_7a300392c7eb2932d0ca565aa1e038c9 = L.circleMarker(
+                [40.42826, -3.70244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_56cbe49aaa39d6ce97464e1815216ff0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ce4268e6f7e3cfcbee3ca56f1ad96b9 = $(`<div id="html_5ce4268e6f7e3cfcbee3ca56f1ad96b9" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 31.22<br>Ocupación: 216</div>`)[0];
+                popup_56cbe49aaa39d6ce97464e1815216ff0.setContent(html_5ce4268e6f7e3cfcbee3ca56f1ad96b9);
+            
+        
+
+        circle_marker_7a300392c7eb2932d0ca565aa1e038c9.bindPopup(popup_56cbe49aaa39d6ce97464e1815216ff0)
+        ;
+
+        
+    
+    
+            var circle_marker_8dec5a1221597df94e29d117faa589cd = L.circleMarker(
+                [40.4203, -3.70461],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_a6310925fb963a7b49735ae4ba38fa2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_822bdf7245f83b3e8c77cd2ba7a07269 = $(`<div id="html_822bdf7245f83b3e8c77cd2ba7a07269" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 20.64<br>Ocupación: 255</div>`)[0];
+                popup_a6310925fb963a7b49735ae4ba38fa2f.setContent(html_822bdf7245f83b3e8c77cd2ba7a07269);
+            
+        
+
+        circle_marker_8dec5a1221597df94e29d117faa589cd.bindPopup(popup_a6310925fb963a7b49735ae4ba38fa2f)
+        ;
+
+        
+    
+    
+            var circle_marker_6d3a2ddfdd5e78823bc3a046bff7ae7d = L.circleMarker(
+                [40.39712524414063, -3.668958902359009],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_13364d383eba312905cfec93ace24375 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5595eaf82212e90a78d11f8c99d0aaa = $(`<div id="html_d5595eaf82212e90a78d11f8c99d0aaa" style="width: 100.0%; height: 100.0%;">Barrio: San Diego<br>Rentabilidad: 26.12<br>Ocupación: 255</div>`)[0];
+                popup_13364d383eba312905cfec93ace24375.setContent(html_d5595eaf82212e90a78d11f8c99d0aaa);
+            
+        
+
+        circle_marker_6d3a2ddfdd5e78823bc3a046bff7ae7d.bindPopup(popup_13364d383eba312905cfec93ace24375)
+        ;
+
+        
+    
+    
+            var circle_marker_a902c9f04fda1abdcd4bf799266e8a27 = L.circleMarker(
+                [40.42124, -3.70145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_4f36fa59f70ef17b0f4eea543fc3bffe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43805a98477e9d3037249ed689bd1f9f = $(`<div id="html_43805a98477e9d3037249ed689bd1f9f" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 21.19<br>Ocupación: 255</div>`)[0];
+                popup_4f36fa59f70ef17b0f4eea543fc3bffe.setContent(html_43805a98477e9d3037249ed689bd1f9f);
+            
+        
+
+        circle_marker_a902c9f04fda1abdcd4bf799266e8a27.bindPopup(popup_4f36fa59f70ef17b0f4eea543fc3bffe)
+        ;
+
+        
+    
+    
+            var circle_marker_41c0d52b4b81e8dbba2834f3053c972a = L.circleMarker(
+                [40.42132, -3.70185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_ba8e9b4a554200464ce84a2c042b0c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69f196f5e08b22d85563d20a376eb278 = $(`<div id="html_69f196f5e08b22d85563d20a376eb278" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 20.83<br>Ocupación: 255</div>`)[0];
+                popup_ba8e9b4a554200464ce84a2c042b0c8f.setContent(html_69f196f5e08b22d85563d20a376eb278);
+            
+        
+
+        circle_marker_41c0d52b4b81e8dbba2834f3053c972a.bindPopup(popup_ba8e9b4a554200464ce84a2c042b0c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_e4fffb3ee6cd95494af327b689f97baa = L.circleMarker(
+                [40.41915, -3.70276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_7bc4f12ff342ee4083cafaa7f2d8947d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f79632555f3069e817358c8f6920a56 = $(`<div id="html_2f79632555f3069e817358c8f6920a56" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 28.81<br>Ocupación: 255</div>`)[0];
+                popup_7bc4f12ff342ee4083cafaa7f2d8947d.setContent(html_2f79632555f3069e817358c8f6920a56);
+            
+        
+
+        circle_marker_e4fffb3ee6cd95494af327b689f97baa.bindPopup(popup_7bc4f12ff342ee4083cafaa7f2d8947d)
+        ;
+
+        
+    
+    
+            var circle_marker_ba3c8bbc3ffb398a69f1130599a7602c = L.circleMarker(
+                [40.424382, -3.7068263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_c519023b898f0cb1b8485ef78ff08bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_198cd578876129daccf75480427e2f40 = $(`<div id="html_198cd578876129daccf75480427e2f40" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 35.56<br>Ocupación: 255</div>`)[0];
+                popup_c519023b898f0cb1b8485ef78ff08bb7.setContent(html_198cd578876129daccf75480427e2f40);
+            
+        
+
+        circle_marker_ba3c8bbc3ffb398a69f1130599a7602c.bindPopup(popup_c519023b898f0cb1b8485ef78ff08bb7)
+        ;
+
+        
+    
+    
+            var circle_marker_9133ddd9b670e105f4226faf223e56b5 = L.circleMarker(
+                [40.41714, -3.673],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_1d471d1581a239f0919cb090d41c2b3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fd6d60bc790f6131d6f2f99f8bb5ffb = $(`<div id="html_8fd6d60bc790f6131d6f2f99f8bb5ffb" style="width: 100.0%; height: 100.0%;">Barrio: Ibiza<br>Rentabilidad: 20.42<br>Ocupación: 252</div>`)[0];
+                popup_1d471d1581a239f0919cb090d41c2b3a.setContent(html_8fd6d60bc790f6131d6f2f99f8bb5ffb);
+            
+        
+
+        circle_marker_9133ddd9b670e105f4226faf223e56b5.bindPopup(popup_1d471d1581a239f0919cb090d41c2b3a)
+        ;
+
+        
+    
+    
+            var circle_marker_122319408d421268bcc654e83e81e5ea = L.circleMarker(
+                [40.41624, -3.71033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_f4aba58c4a14d9e492c4281500b44f90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e49b984a5b6a62a9a1bd56a14c69dfee = $(`<div id="html_e49b984a5b6a62a9a1bd56a14c69dfee" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 30.52<br>Ocupación: 234</div>`)[0];
+                popup_f4aba58c4a14d9e492c4281500b44f90.setContent(html_e49b984a5b6a62a9a1bd56a14c69dfee);
+            
+        
+
+        circle_marker_122319408d421268bcc654e83e81e5ea.bindPopup(popup_f4aba58c4a14d9e492c4281500b44f90)
+        ;
+
+        
+    
+    
+            var circle_marker_44a3d4d9d06b76c4eaf6d74e5c236386 = L.circleMarker(
+                [40.43965, -3.69438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_018033d89ad38435816085ee1c83989b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a431614424c898b9562260cc3d00ca = $(`<div id="html_c7a431614424c898b9562260cc3d00ca" style="width: 100.0%; height: 100.0%;">Barrio: Rios Rosas<br>Rentabilidad: 31.21<br>Ocupación: 255</div>`)[0];
+                popup_018033d89ad38435816085ee1c83989b.setContent(html_c7a431614424c898b9562260cc3d00ca);
+            
+        
+
+        circle_marker_44a3d4d9d06b76c4eaf6d74e5c236386.bindPopup(popup_018033d89ad38435816085ee1c83989b)
+        ;
+
+        
+    
+    
+            var circle_marker_4f4d95eb226364dd168c231d6bba24b1 = L.circleMarker(
+                [40.38847, -3.65676],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_92c0481a2e131fb7e0a3611676a49a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd614238c667dcd80b049e9e52b9413 = $(`<div id="html_8dd614238c667dcd80b049e9e52b9413" style="width: 100.0%; height: 100.0%;">Barrio: Palomeras Bajas<br>Rentabilidad: 21.08<br>Ocupación: 255</div>`)[0];
+                popup_92c0481a2e131fb7e0a3611676a49a75.setContent(html_8dd614238c667dcd80b049e9e52b9413);
+            
+        
+
+        circle_marker_4f4d95eb226364dd168c231d6bba24b1.bindPopup(popup_92c0481a2e131fb7e0a3611676a49a75)
+        ;
+
+        
+    
+    
+            var circle_marker_76b58c372927a75e8b4491f6b5f8c5db = L.circleMarker(
+                [40.41255, -3.70648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_ee1086f46df1097c2c1f34bb65050374 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1df000f7a32f588e6c091332c51d885d = $(`<div id="html_1df000f7a32f588e6c091332c51d885d" style="width: 100.0%; height: 100.0%;">Barrio: Embajadores<br>Rentabilidad: 21.34<br>Ocupación: 255</div>`)[0];
+                popup_ee1086f46df1097c2c1f34bb65050374.setContent(html_1df000f7a32f588e6c091332c51d885d);
+            
+        
+
+        circle_marker_76b58c372927a75e8b4491f6b5f8c5db.bindPopup(popup_ee1086f46df1097c2c1f34bb65050374)
+        ;
+
+        
+    
+    
+            var circle_marker_be53bf5743c087d1feaf60b4a45ab3f6 = L.circleMarker(
+                [40.42743, -3.70829],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_7684b3e4b3df5210d8b9d7843350f314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b94eee682154a1162d0346c77bb3e347 = $(`<div id="html_b94eee682154a1162d0346c77bb3e347" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 79.33<br>Ocupación: 228</div>`)[0];
+                popup_7684b3e4b3df5210d8b9d7843350f314.setContent(html_b94eee682154a1162d0346c77bb3e347);
+            
+        
+
+        circle_marker_be53bf5743c087d1feaf60b4a45ab3f6.bindPopup(popup_7684b3e4b3df5210d8b9d7843350f314)
+        ;
+
+        
+    
+    
+            var circle_marker_98f31f485a6afb6e13b33d57a74a897c = L.circleMarker(
+                [40.41908, -3.70889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_62a5847a0be48a710cc03b2883960142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8455834a99bef7a386fb5e779f432c12 = $(`<div id="html_8455834a99bef7a386fb5e779f432c12" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 21.19<br>Ocupación: 255</div>`)[0];
+                popup_62a5847a0be48a710cc03b2883960142.setContent(html_8455834a99bef7a386fb5e779f432c12);
+            
+        
+
+        circle_marker_98f31f485a6afb6e13b33d57a74a897c.bindPopup(popup_62a5847a0be48a710cc03b2883960142)
+        ;
+
+        
+    
+    
+            var circle_marker_19370c8a89ee621cbc6250114f1e683e = L.circleMarker(
+                [40.38915, -3.65565],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_0c37af56183864186d94815359f81254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_589568f68b0a56031f58752b36eccea9 = $(`<div id="html_589568f68b0a56031f58752b36eccea9" style="width: 100.0%; height: 100.0%;">Barrio: Palomeras Bajas<br>Rentabilidad: 21.99<br>Ocupación: 255</div>`)[0];
+                popup_0c37af56183864186d94815359f81254.setContent(html_589568f68b0a56031f58752b36eccea9);
+            
+        
+
+        circle_marker_19370c8a89ee621cbc6250114f1e683e.bindPopup(popup_0c37af56183864186d94815359f81254)
+        ;
+
+        
+    
+    
+            var circle_marker_b149ef3fa1f7a9112c1368e339e50772 = L.circleMarker(
+                [40.397834, -3.6644296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_5e72671c63f9257241e0b171d6aae849 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c3ebc3cd4d96e3594e95e5453e67f68 = $(`<div id="html_4c3ebc3cd4d96e3594e95e5453e67f68" style="width: 100.0%; height: 100.0%;">Barrio: Numancia<br>Rentabilidad: 21.28<br>Ocupación: 252</div>`)[0];
+                popup_5e72671c63f9257241e0b171d6aae849.setContent(html_4c3ebc3cd4d96e3594e95e5453e67f68);
+            
+        
+
+        circle_marker_b149ef3fa1f7a9112c1368e339e50772.bindPopup(popup_5e72671c63f9257241e0b171d6aae849)
+        ;
+
+        
+    
+    
+            var circle_marker_600a715f699dc81696ebaeef94705064 = L.circleMarker(
+                [40.39181, -3.70214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_4e681d30e360cb2d6d1fd93dbd9cd47e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a7e861b00c5a6de14d2c416e4d8e306 = $(`<div id="html_7a7e861b00c5a6de14d2c416e4d8e306" style="width: 100.0%; height: 100.0%;">Barrio: Moscardó<br>Rentabilidad: 24.11<br>Ocupación: 246</div>`)[0];
+                popup_4e681d30e360cb2d6d1fd93dbd9cd47e.setContent(html_7a7e861b00c5a6de14d2c416e4d8e306);
+            
+        
+
+        circle_marker_600a715f699dc81696ebaeef94705064.bindPopup(popup_4e681d30e360cb2d6d1fd93dbd9cd47e)
+        ;
+
+        
+    
+    
+            var circle_marker_40176aeaf5bd4cb969d0af2ebacba29e = L.circleMarker(
+                [40.4217097, -3.6895557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_25297eb5e02184b5439b244e575eb1bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d34588728b9862e3467b0b0319399723 = $(`<div id="html_d34588728b9862e3467b0b0319399723" style="width: 100.0%; height: 100.0%;">Barrio: Recoletos<br>Rentabilidad: 22.81<br>Ocupación: 255</div>`)[0];
+                popup_25297eb5e02184b5439b244e575eb1bf.setContent(html_d34588728b9862e3467b0b0319399723);
+            
+        
+
+        circle_marker_40176aeaf5bd4cb969d0af2ebacba29e.bindPopup(popup_25297eb5e02184b5439b244e575eb1bf)
+        ;
+
+        
+    
+    
+            var circle_marker_deccc93c05308051ec93abe0e26d7e43 = L.circleMarker(
+                [40.4224953312819, -3.705267954271709],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_e7ad1f82fd0477cacd4bdd2e1bde2e2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06f9c31738deda77abb1deace82736cd = $(`<div id="html_06f9c31738deda77abb1deace82736cd" style="width: 100.0%; height: 100.0%;">Barrio: Universidad<br>Rentabilidad: 26.34<br>Ocupación: 255</div>`)[0];
+                popup_e7ad1f82fd0477cacd4bdd2e1bde2e2a.setContent(html_06f9c31738deda77abb1deace82736cd);
+            
+        
+
+        circle_marker_deccc93c05308051ec93abe0e26d7e43.bindPopup(popup_e7ad1f82fd0477cacd4bdd2e1bde2e2a)
+        ;
+
+        
+    
+    
+            var circle_marker_f5376f3701abdac7fb61f5c76028ec65 = L.circleMarker(
+                [40.38814164918436, -3.6572073689891154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_66bc23f722108e6c64b05eed30b48bb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a177629f02069b44383820213dfe618f = $(`<div id="html_a177629f02069b44383820213dfe618f" style="width: 100.0%; height: 100.0%;">Barrio: Palomeras Bajas<br>Rentabilidad: 23.60<br>Ocupación: 255</div>`)[0];
+                popup_66bc23f722108e6c64b05eed30b48bb0.setContent(html_a177629f02069b44383820213dfe618f);
+            
+        
+
+        circle_marker_f5376f3701abdac7fb61f5c76028ec65.bindPopup(popup_66bc23f722108e6c64b05eed30b48bb0)
+        ;
+
+        
+    
+    
+            var circle_marker_dfd759173fbfbf453a703e6ffeb49419 = L.circleMarker(
+                [40.39896, -3.6687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_06c5120a094de84b371dd920e26a4100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c4ada27263c4632ec5ff4169b2f159 = $(`<div id="html_39c4ada27263c4632ec5ff4169b2f159" style="width: 100.0%; height: 100.0%;">Barrio: Numancia<br>Rentabilidad: 32.08<br>Ocupación: 255</div>`)[0];
+                popup_06c5120a094de84b371dd920e26a4100.setContent(html_39c4ada27263c4632ec5ff4169b2f159);
+            
+        
+
+        circle_marker_dfd759173fbfbf453a703e6ffeb49419.bindPopup(popup_06c5120a094de84b371dd920e26a4100)
+        ;
+
+        
+    
+    
+            var circle_marker_1e1f9420925a8a7ca308693b175123d2 = L.circleMarker(
+                [40.4322, -3.65908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_e357eebafa57bc7aeaaa5b04ef1620fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cd195a6d48910d5ffe0bd0510049e48 = $(`<div id="html_0cd195a6d48910d5ffe0bd0510049e48" style="width: 100.0%; height: 100.0%;">Barrio: Concepción<br>Rentabilidad: 23.48<br>Ocupación: 255</div>`)[0];
+                popup_e357eebafa57bc7aeaaa5b04ef1620fe.setContent(html_0cd195a6d48910d5ffe0bd0510049e48);
+            
+        
+
+        circle_marker_1e1f9420925a8a7ca308693b175123d2.bindPopup(popup_e357eebafa57bc7aeaaa5b04ef1620fe)
+        ;
+
+        
+    
+    
+            var circle_marker_02df2efbfa9448c95a75eeab0c3278bd = L.circleMarker(
+                [40.41695407821902, -3.708904083663488],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_eee9291db749d958d52c5b69dd4d01e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01d633917d6f8b7f055a6c7c27536d5e = $(`<div id="html_01d633917d6f8b7f055a6c7c27536d5e" style="width: 100.0%; height: 100.0%;">Barrio: Palacio<br>Rentabilidad: 22.88<br>Ocupación: 255</div>`)[0];
+                popup_eee9291db749d958d52c5b69dd4d01e5.setContent(html_01d633917d6f8b7f055a6c7c27536d5e);
+            
+        
+
+        circle_marker_02df2efbfa9448c95a75eeab0c3278bd.bindPopup(popup_eee9291db749d958d52c5b69dd4d01e5)
+        ;
+
+        
+    
+    
+            var circle_marker_c834dab4b20f5bb2d461bed485e3723d = L.circleMarker(
+                [40.4217097, -3.6895557],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_e2328a28c91ccf7d6f1e75a43376128d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc66ffb054188eacbc23c9edc24f626 = $(`<div id="html_5bc66ffb054188eacbc23c9edc24f626" style="width: 100.0%; height: 100.0%;">Barrio: Recoletos<br>Rentabilidad: 24.33<br>Ocupación: 255</div>`)[0];
+                popup_e2328a28c91ccf7d6f1e75a43376128d.setContent(html_5bc66ffb054188eacbc23c9edc24f626);
+            
+        
+
+        circle_marker_c834dab4b20f5bb2d461bed485e3723d.bindPopup(popup_e2328a28c91ccf7d6f1e75a43376128d)
+        ;
+
+        
+    
+    
+            var circle_marker_7330f299ae00754e84de399b4386281e = L.circleMarker(
+                [40.41639, -3.70606],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_3f8cf0668a1ae3401e44b482a737a0dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_544f8b16a30ac28c919f5cde0c24e2be = $(`<div id="html_544f8b16a30ac28c919f5cde0c24e2be" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 20.64<br>Ocupación: 255</div>`)[0];
+                popup_3f8cf0668a1ae3401e44b482a737a0dc.setContent(html_544f8b16a30ac28c919f5cde0c24e2be);
+            
+        
+
+        circle_marker_7330f299ae00754e84de399b4386281e.bindPopup(popup_3f8cf0668a1ae3401e44b482a737a0dc)
+        ;
+
+        
+    
+    
+            var circle_marker_685490c6d4b17ddd677027fe47ed0850 = L.circleMarker(
+                [40.443956630407214, -3.585491122001105],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_72c694c35b90883cc20fff603db9cd26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0016fc3fbcb28b8189dd9a892ac3c0a = $(`<div id="html_f0016fc3fbcb28b8189dd9a892ac3c0a" style="width: 100.0%; height: 100.0%;">Barrio: Rejas<br>Rentabilidad: 20.48<br>Ocupación: 255</div>`)[0];
+                popup_72c694c35b90883cc20fff603db9cd26.setContent(html_f0016fc3fbcb28b8189dd9a892ac3c0a);
+            
+        
+
+        circle_marker_685490c6d4b17ddd677027fe47ed0850.bindPopup(popup_72c694c35b90883cc20fff603db9cd26)
+        ;
+
+        
+    
+    
+            var circle_marker_8563950652c0cfc89e4d3dae8bea95cd = L.circleMarker(
+                [40.421217900869706, -3.699016347527504],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_f936d930fa80a334d54d30f163f5eb08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70b4b145cdf2066a78ef00eba62ff759 = $(`<div id="html_70b4b145cdf2066a78ef00eba62ff759" style="width: 100.0%; height: 100.0%;">Barrio: Justicia<br>Rentabilidad: 20.55<br>Ocupación: 255</div>`)[0];
+                popup_f936d930fa80a334d54d30f163f5eb08.setContent(html_70b4b145cdf2066a78ef00eba62ff759);
+            
+        
+
+        circle_marker_8563950652c0cfc89e4d3dae8bea95cd.bindPopup(popup_f936d930fa80a334d54d30f163f5eb08)
+        ;
+
+        
+    
+    
+            var circle_marker_dd56f65679e0320107185a8bce8782a0 = L.circleMarker(
+                [40.41693, -3.70072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_d43aad3cd1f37ab9f047d1d33aa9f324 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_473a846f3decf87db2d2a3812c33c9f8 = $(`<div id="html_473a846f3decf87db2d2a3812c33c9f8" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 24.19<br>Ocupación: 255</div>`)[0];
+                popup_d43aad3cd1f37ab9f047d1d33aa9f324.setContent(html_473a846f3decf87db2d2a3812c33c9f8);
+            
+        
+
+        circle_marker_dd56f65679e0320107185a8bce8782a0.bindPopup(popup_d43aad3cd1f37ab9f047d1d33aa9f324)
+        ;
+
+        
+    
+    
+            var circle_marker_863f11ecf202ff63d6bde807634b2e6e = L.circleMarker(
+                [40.4097088, -3.7059328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_41fdfa8ebdd321e8f9c61627540aa1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a021ddd97c3d81429b1830db9225096 = $(`<div id="html_2a021ddd97c3d81429b1830db9225096" style="width: 100.0%; height: 100.0%;">Barrio: Embajadores<br>Rentabilidad: 24.93<br>Ocupación: 255</div>`)[0];
+                popup_41fdfa8ebdd321e8f9c61627540aa1b0.setContent(html_2a021ddd97c3d81429b1830db9225096);
+            
+        
+
+        circle_marker_863f11ecf202ff63d6bde807634b2e6e.bindPopup(popup_41fdfa8ebdd321e8f9c61627540aa1b0)
+        ;
+
+        
+    
+    
+            var circle_marker_e24da042c81ca41f1212e1eb1e39a37b = L.circleMarker(
+                [40.41953, -3.67657],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_7632666e8f42557d0bc71194e7d57a67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14fca9a848f2a6d59057ea5571571baa = $(`<div id="html_14fca9a848f2a6d59057ea5571571baa" style="width: 100.0%; height: 100.0%;">Barrio: Ibiza<br>Rentabilidad: 21.99<br>Ocupación: 240</div>`)[0];
+                popup_7632666e8f42557d0bc71194e7d57a67.setContent(html_14fca9a848f2a6d59057ea5571571baa);
+            
+        
+
+        circle_marker_e24da042c81ca41f1212e1eb1e39a37b.bindPopup(popup_7632666e8f42557d0bc71194e7d57a67)
+        ;
+
+        
+    
+    
+            var circle_marker_6dbd020a093fb07d53806854569d275e = L.circleMarker(
+                [40.33275, -3.70102],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_a7c0693049edc397fe0641b097711769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e24d8ffe572d5758b3701ff502e54169 = $(`<div id="html_e24d8ffe572d5758b3701ff502e54169" style="width: 100.0%; height: 100.0%;">Barrio: San Andrés<br>Rentabilidad: 22.24<br>Ocupación: 255</div>`)[0];
+                popup_a7c0693049edc397fe0641b097711769.setContent(html_e24d8ffe572d5758b3701ff502e54169);
+            
+        
+
+        circle_marker_6dbd020a093fb07d53806854569d275e.bindPopup(popup_a7c0693049edc397fe0641b097711769)
+        ;
+
+        
+    
+    
+            var circle_marker_d28eff43ad8fc086b657485419735f17 = L.circleMarker(
+                [40.41677357888087, -3.7014390354288538],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_f8be9395f0692c458f12df22e3199d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec9c593b7d3ef92505bcb9d2d0489fe3 = $(`<div id="html_ec9c593b7d3ef92505bcb9d2d0489fe3" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 36.07<br>Ocupación: 252</div>`)[0];
+                popup_f8be9395f0692c458f12df22e3199d1a.setContent(html_ec9c593b7d3ef92505bcb9d2d0489fe3);
+            
+        
+
+        circle_marker_d28eff43ad8fc086b657485419735f17.bindPopup(popup_f8be9395f0692c458f12df22e3199d1a)
+        ;
+
+        
+    
+    
+            var circle_marker_b727fa1270428bfc75ad58e4667ffac4 = L.circleMarker(
+                [40.42524364409444, -3.695689157178904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_96ff61ade7e7cfe9b64c5585f4a134f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7fdf1d10c39f0b7e6228b25071f290 = $(`<div id="html_cb7fdf1d10c39f0b7e6228b25071f290" style="width: 100.0%; height: 100.0%;">Barrio: Justicia<br>Rentabilidad: 20.46<br>Ocupación: 210</div>`)[0];
+                popup_96ff61ade7e7cfe9b64c5585f4a134f7.setContent(html_cb7fdf1d10c39f0b7e6228b25071f290);
+            
+        
+
+        circle_marker_b727fa1270428bfc75ad58e4667ffac4.bindPopup(popup_96ff61ade7e7cfe9b64c5585f4a134f7)
+        ;
+
+        
+    
+    
+            var circle_marker_e8cc83d2ee49b1fc0a5a42fad26916b3 = L.circleMarker(
+                [40.4158978, -3.7080117],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_aa4cc819520350fb6df61f4b44c43698 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c8db6c8bca0146aecb9edfd1e283a6 = $(`<div id="html_b8c8db6c8bca0146aecb9edfd1e283a6" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 22.20<br>Ocupación: 255</div>`)[0];
+                popup_aa4cc819520350fb6df61f4b44c43698.setContent(html_b8c8db6c8bca0146aecb9edfd1e283a6);
+            
+        
+
+        circle_marker_e8cc83d2ee49b1fc0a5a42fad26916b3.bindPopup(popup_aa4cc819520350fb6df61f4b44c43698)
+        ;
+
+        
+    
+    
+            var circle_marker_ca249326020db11a43495ae7e4e9edf6 = L.circleMarker(
+                [40.4620955, -3.696286199999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_43d18a28c66146e52d8a1a41f382b6b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f0f2ac36ff9d4835bee05d62844a94c = $(`<div id="html_3f0f2ac36ff9d4835bee05d62844a94c" style="width: 100.0%; height: 100.0%;">Barrio: Castillejos<br>Rentabilidad: 23.69<br>Ocupación: 255</div>`)[0];
+                popup_43d18a28c66146e52d8a1a41f382b6b3.setContent(html_3f0f2ac36ff9d4835bee05d62844a94c);
+            
+        
+
+        circle_marker_ca249326020db11a43495ae7e4e9edf6.bindPopup(popup_43d18a28c66146e52d8a1a41f382b6b3)
+        ;
+
+        
+    
+    
+            var circle_marker_01fd766114cd2c89efbbaa731cec6eee = L.circleMarker(
+                [40.415746, -3.7062087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_cbbc6f984b6ecef03fd21bca3a63f639);
+        
+    
+        var popup_32db68ca85a74cb9ce3ac3c2e495fbfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae13275cb813bd182a971d678778ca8d = $(`<div id="html_ae13275cb813bd182a971d678778ca8d" style="width: 100.0%; height: 100.0%;">Barrio: Sol<br>Rentabilidad: 23.35<br>Ocupación: 255</div>`)[0];
+                popup_32db68ca85a74cb9ce3ac3c2e495fbfa.setContent(html_ae13275cb813bd182a971d678778ca8d);
+            
+        
+
+        circle_marker_01fd766114cd2c89efbbaa731cec6eee.bindPopup(popup_32db68ca85a74cb9ce3ac3c2e495fbfa)
+        ;
+
+        
+    
+</script>
+</html>

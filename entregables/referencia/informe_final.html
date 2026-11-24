@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis del Mercado Inmobiliario - Madrid Airbnb</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px 15px 0 0;
+            margin: -20px -20px 40px -20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .executive-summary h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .key-insights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .insight-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .functional-insight {
+            background: #f8f9fa;
+            border-left: 5px solid #007bff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .functional-insight h3 {
+            color: #007bff;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .exhibit {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .exhibit h4 {
+            color: #495057;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .recommendation h4 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 500;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .priority-high {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .priority-medium {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+
+        .priority-low {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Análisis del Mercado Inmobiliario</h1>
+            <p>Identificación de Oportunidades de Inversión en Alquiler Turístico - Madrid</p>
+        </div>
+
+        <!-- RESUMEN EJECUTIVO -->
+        <div class="executive-summary">
+            <h2>🎯 Resumen Ejecutivo</h2>
+            <div class="key-insights">
+                <div class="insight-card">
+                    <h3>Oportunidad de Mercado</h3>
+                    <p>Existen inmuebles con rentabilidades del 8-20% y ocupación superior a 200 días anuales en
+                        distritos no tradicionales.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Zonas Prioritarias</h3>
+                    <p>Villa de Vallecas, Barajas y Centro son los 3 distritos principales para maximizar ROI.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Perfil Óptimo</h3>
+                    <p>Inmuebles de 2-3 habitaciones, capacidad 4+ personas, alquiler completo del apartamento.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Inversión Mínima</h3>
+                    <p>En Barajas es posible adquirir propiedades rentables por menos de 200.000€.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- INSIGHTS DE NEGOCIO -->
+        <div class="section">
+            <h2>📊 Insights de Negocio</h2>
+
+            <div class="functional-insight priority-high">
+                <h3>1. Maximización de Rentabilidad</h3>
+                <p><strong>Insight:</strong> Los inmuebles más rentables se concentran en distritos periféricos con
+                    menor competencia pero alta demanda turística.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">15.2%</span>
+                        <span class="stat-label">Rentabilidad Mediana<br>Villa de Vallecas</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12.8%</span>
+                        <span class="stat-label">Rentabilidad Mediana<br>Barajas</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">250+</span>
+                        <span class="stat-label">Días de Ocupación<br>Promedio</span>
+                    </div>
+                </div>
+
+                <div class="exhibit">
+                    <h4>Exhibit A: Rentabilidad por Distrito</h4>
+                    <div class="chart-container">
+                        <img src="boxplot_margen_bruto_distrito.png" alt="Boxplot margen bruto por distrito">
+                        <p><em>Gráfico generado en el análisis: Distribución de Margen Bruto por Distrito</em></p>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <h4>💡 Recomendación Estratégica</h4>
+                    <p>Priorizar inversiones en <strong>Villa de Vallecas, Barajas y Centro</strong> para maximizar
+                        rentabilidad. Enfocarse en propiedades de 2-3 habitaciones con capacidad para 4+ personas.</p>
+                </div>
+            </div>
+
+            <div class="functional-insight priority-high">
+                <h3>2. Optimización de Ocupación</h3>
+                <p><strong>Insight:</strong> La ocupación se maximiza con inmuebles de mayor capacidad en ubicaciones
+                    estratégicas cerca de transporte.</p>
+
+                <div class="exhibit">
+                    <h4>Exhibit C: Oportunidad Específica en Barajas</h4>
+                    <div class="chart-container">
+                        <img src="scatter_barajas_coste_margen_ocupacion.png"
+                            alt="Scatter plot Barajas: Coste vs Rentabilidad por ocupación">
+                        <p><em>Análisis específico del distrito de Barajas - Scatter plot de Coste vs Rentabilidad
+                                coloreado por ocupación</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INSIGHTS FUNCIONALES -->
+        <div class="section">
+            <h2>🔍 Insights Funcionales</h2>
+
+            <div class="functional-insight">
+                <h3>Análisis por Tipo de Propiedad</h3>
+                <p>El alquiler completo del apartamento supera consistentemente al alquiler por habitaciones en
+                    rentabilidad, excepto en casos específicos de Barajas.</p>
+
+                <div class="exhibit">
+                    <h4>Exhibit D: Rentabilidad por Tipo de Alquiler y Habitaciones</h4>
+                    <div class="chart-container">
+                        <img src="heatmap_roomtype_bedrooms_margen.png"
+                            alt="Heatmap margen bruto por tipo de alquiler y habitaciones">
+                        <p><em>Heatmap: Margen Bruto por Tipo de Habitación y Número de Dormitorios</em></p>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de Alquiler</th>
+                                <th>2 Habitaciones</th>
+                                <th>3 Habitaciones</th>
+                                <th>4+ Habitaciones</th>
+                                <th>Recomendación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Apartamento Completo</strong></td>
+                                <td>12.5%</td>
+                                <td>14.2%</td>
+                                <td>11.8%</td>
+                                <td class="priority-high">Prioritario</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Habitación Privada</strong></td>
+                                <td>8.3%</td>
+                                <td>9.1%</td>
+                                <td>10.2%</td>
+                                <td class="priority-medium">Secundario</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Habitación Compartida</strong></td>
+                                <td>5.2%</td>
+                                <td>6.1%</td>
+                                <td>7.4%</td>
+                                <td class="priority-low">No recomendado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="functional-insight">
+                <h3>Segmentación Geográfica Detallada</h3>
+                <p>Cada distrito presenta características únicas que requieren estrategias de inversión diferenciadas.
+                </p>
+
+                <div class="exhibit">
+                    <h4>Exhibit E: Estrategia por Distrito</h4>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Distrito</th>
+                                    <th>Habitaciones Óptimas</th>
+                                    <th>Capacidad</th>
+                                    <th>Tipo Alquiler</th>
+                                    <th>Rentabilidad Esperada</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="priority-high">
+                                    <td><strong>Villa de Vallecas</strong></td>
+                                    <td>2-3 hab</td>
+                                    <td>4+ personas</td>
+                                    <td>Completo</td>
+                                    <td>15.2%</td>
+                                </tr>
+                                <tr class="priority-high">
+                                    <td><strong>Barajas</strong></td>
+                                    <td>2-4 hab</td>
+                                    <td>4+ personas</td>
+                                    <td>Habitaciones</td>
+                                    <td>12.8%</td>
+                                </tr>
+                                <tr class="priority-high">
+                                    <td><strong>Centro</strong></td>
+                                    <td>2 hab</td>
+                                    <td>4 personas</td>
+                                    <td>Completo</td>
+                                    <td>11.5%</td>
+                                </tr>
+                                <tr class="priority-medium">
+                                    <td><strong>Puente de Vallecas</strong></td>
+                                    <td>3 hab</td>
+                                    <td>4+ personas</td>
+                                    <td>Completo</td>
+                                    <td>10.8%</td>
+                                </tr>
+                                <tr class="priority-medium">
+                                    <td><strong>Moratalaz</strong></td>
+                                    <td>0-2 hab</td>
+                                    <td>2-4 personas</td>
+                                    <td>Completo</td>
+                                    <td>9.8%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANÁLISIS GEOGRÁFICO -->
+        <div class="section">
+            <h2>🗺️ Análisis Geográfico</h2>
+
+            <div class="functional-insight">
+                <h3>Distribución Espacial de Oportunidades</h3>
+                <p>Los mapas de calor revelan patrones geográficos claros de rentabilidad y ocupación que guían la
+                    estrategia de inversión.</p>
+
+                <div class="exhibit">
+                    <h4>Exhibit F: Mapa de Rentabilidad</h4>
+                    <div class="map-container">
+                        <iframe src="mapa_rentabilidad.html"></iframe>
+                    </div>
+                    <p><em>Las zonas más calientes (rojas) indican mayor concentración de propiedades rentables</em></p>
+                </div>
+
+                <div class="exhibit">
+                    <h4>Exhibit G: Mapa de Ocupación</h4>
+                    <div class="map-container">
+                        <iframe src="mapa_ocupacion.html"></iframe>
+                    </div>
+                    <p><em>Intensidad de color correlaciona con días de ocupación anual</em></p>
+                </div>
+
+                <div class="exhibit">
+                    <h4>Exhibit H: Mapa de Oportunidades Premium</h4>
+                    <div class="map-container">
+                        <iframe src="mapa_oportunidades.html"></iframe>
+                    </div>
+                    <p><em>Puntos amarillos: Propiedades con +20% rentabilidad y +200 días ocupación</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECOMENDACIONES FINALES -->
+        <div class="section">
+            <h2>🎯 Plan de Acción Recomendado</h2>
+
+            <div class="recommendation priority-high">
+                <h4>Fase 1: Inversión Inmediata (0-3 meses)</h4>
+                <ul>
+                    <li><strong>Villa de Vallecas:</strong> Buscar inmuebles de 2-3 habitaciones, precio objetivo
+                        &lt;250.000€</li>
+                    <li><strong>Barajas:</strong> Priorizar propiedades &lt;200.000€ para alquiler por habitaciones</li>
+                    <li><strong>Centro:</strong> Inmuebles compactos de 2 habitaciones con alta rotación</li>
+                </ul>
+            </div>
+
+            <div class="recommendation priority-medium">
+                <h4>Fase 2: Expansión Estratégica (3-6 meses)</h4>
+                <ul>
+                    <li>Explorar oportunidades en Puente de Vallecas y Moratalaz</li>
+                    <li>Investigar nichos específicos: estudios en Moratalaz</li>
+                    <li>Diversificar con propiedades de 4+ habitaciones en Ciudad Lineal</li>
+                </ul>
+            </div>
+
+            <div class="recommendation priority-low">
+                <h4>Fase 3: Optimización de Cartera (6-12 meses)</h4>
+                <ul>
+                    <li>Monitorizar rendimiento y ajustar estrategia por distrito</li>
+                    <li>Expandir a distritos secundarios basándose en resultados</li>
+                    <li>Considerar adquisiciones oportunistas en cualquier distrito</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <p><strong>Análisis realizado con datos del mercado inmobiliario de Madrid</strong></p>
+            <p><em>Fecha del informe: Septiembre 2025</em></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+# Archivos del sistema
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Entornos y Python
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos (mantener estructura de carpetas)
+datos/brutos/*
+datos/intermedios/*
+datos/procesados/*
+datos/referencia_madrid/*
+!datos/**/.gitkeep
+!datos/**/README.md
+*.csv
+*.csv.gz
+*.gz
+*.xlsx
+*.parquet
+*.feather
+*.db
+*.sqlite
+*.duckdb
+
+# Entregables generados
+entregables/graficos/*
+entregables/informes/*
+entregables/dashboards/*
+!entregables/**/.gitkeep
+
+# Logs
+*.log
+
+# Configuración de IDE
+.vscode/
+.idea/
